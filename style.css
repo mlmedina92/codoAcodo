@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.texto-header {
+    color: white;
+}
+
+/* Hero */
+
+.banner {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+.contenedor-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../src/img/ba11.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-font{
+    color:white;
+}
+
+
+/* card-horizontal */
+
+.card-horizontal{
+    background-color: grey;
+}
+
+
+.card-font{
+    color:white;
+}
+
+/* MQ MOBILE*/
+
+@media screen and (max-device-width: 640px) {
+    .banner {
+        min-height: 414px;
+    }
+}
