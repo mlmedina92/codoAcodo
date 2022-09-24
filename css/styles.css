@@ -1,0 +1,47 @@
+.texto-header {
+  color: #fff; }
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff; }
+
+ul {
+  list-style-type: none; }
+
+.last-item {
+  color: #3c7b3f; }
+
+/* Hero */
+.contenedor-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../src/img/ba11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.banner {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  text-align: end; }
+
+.header-font {
+  color: #fff; }
+
+/* card-horizontal */
+.card-horizontal {
+  background-color: grey; }
+
+.card-font {
+  color: #fff; }
+
+/* Footer */
+footer {
+  background-color: #46468a; }
+
+/* MQ MOBILE*/
+@media screen and (max-device-width: 640px) {
+  .banner {
+    min-height: 414px; }
+  .oradores .row {
+    flex-wrap: wrap; } }
