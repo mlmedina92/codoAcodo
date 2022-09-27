@@ -72,7 +72,7 @@
             <p class="text-uppercase text-center mt-2">conoce</p>
             <h2 class="text-uppercase text-center">a los oradores</h2>
             <div class="container">
-                <div class="row gap-3">
+                <div class="row">
                     <div class="card col-12 col-md-4 p-0">
                         <img src="./src/img/steve.jpg" class="card-img-top img-fluid" alt="Steve">
                         <div class="card-body">
@@ -133,25 +133,30 @@
         <!-- form -->
         <section>
             <p class="text-uppercase text-center mt-2">conviértete</p>
-            <h2 class="text-uppercase text-center">en un orador</h2>
-            <form class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <input type="text" placeholder="nombre" class="form-control" />
+            <h2 class="text-uppercase text-center mt-2">en un orador</h2>
+            <p class="text-center mt-2">Anotate como orador para dar una <abbr title="attribute">charla ignite</abbr>.
+                Cuentanos de que quieres hablar</p>
+            <form class="container mt-2">
+                <div class="row mb-4">
+                    <div class="col-5 m-0 p-0">
+                        <input type="text" placeholder="nombre" class="form-control m-0 p-0" />
                     </div>
-                    <div class="col-6">
-                        <input type="text" placeholder="Apellido" class="form-control" />
+                    <div class="col-2 m-0 p-0"></div>
+                    <div class="col-5 m-0 p-0">
+                        <input type="text" placeholder="Apellido" class="form-control m-0 p-0" />
                     </div>
                 </div>
                 <div class="row">
-                    <textarea placeholder="¿Sobre qué quieres hablar?" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea placeholder="¿Sobre qué quieres hablar?" class="form-control col-12 mb-4"
+                        id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="row">
-                    <div class="form-text">Recuerde incluir un título para tu
-                        charla.</div>
+                    <div class="form-text col-12">Recuerde incluir un título para tu
+                        charla.
+                    </div>
                 </div>
                 <div class="row">
-                    <button type="submit" class="col-12 btn btn-primary">Enviar</button>
+                    <button type="submit" class="col-12 btn btn-success my-3">Enviar</button>
                 </div>
             </form>
         </section>
@@ -161,31 +166,19 @@
 
     <!-- footer -->
     <footer class="container-fluid footer">
-        <div class="container">
             <ul class="row">
-                <div class="col-1">
-                    <li><a href="">Preguntas frecuentes</a></li>
-                </div>
-                <div class="col-3">
-                    <li><a href="">Contáctenos</a></li>
-                </div>
-                <div class="col-2">
-                    <li><a href="">Prensa</a></li>
-                </div>
-                <div class="col-3">
-                    <li><a href="">Conferencias</a></li>
-                </div>
-                <div class="col-1">
-                    <li><a href="">Términos y condiciones</a></li>
-                </div>
-                <div class="col-1">
-                    <li><a href="">Privacidad</a></li>
-                </div>
-                <div class="col-1">
-                    <li><a href="">Estudiantes</a></li>
-                </div>
+                <li class="col-1">
+                    <a href="">Preguntas frecuentes</a>
+                </li>
+                <li class="col-2">
+                    <a href="">Contáctenos</a>
+                </li>
+                <li class="col-2"><a href="">Prensa</a></li>
+                <li class="col-2"><a href="">Conferencias</a></li>
+                <li class="col-1"><a href="">Términos y condiciones</a></li>
+                <li class="col-2"><a href="">Privacidad</a></li>
+                <li class="col-2"><a href="">Estudiantes</a></li>
             </ul>
-        </div>
 
     </footer>
     <!-- footer -->
