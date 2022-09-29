@@ -2,6 +2,7 @@
   $color-blanco: #fff;
   $color-verde : rgb(60, 123, 63);
   $color-gris: rgba(78, 74, 74, 0.871);
+  $color-azul: #315783;
 
   .texto-header {
     color: $color-blanco;
@@ -53,6 +54,15 @@ a {
   
   /* Footer */
   
+  footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #315783; 
+}
+
+#footer_navbar a {
+    color: $color-blanco;
+}
 
   /* MQ MOBILE*/
   

@@ -30,18 +30,21 @@ ul {
 
 /* card-horizontal */
 .card-horizontal {
-  background-color: grey; }
+  background-color: rgba(78, 74, 74, 0.871); }
 
 .card-font {
   color: #fff; }
 
 /* Footer */
 footer {
-  background-color: #46468a; }
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #315783; }
+
+#footer_navbar a {
+  color: #fff; }
 
 /* MQ MOBILE*/
 @media screen and (max-device-width: 640px) {
   .banner {
-    min-height: 414px; }
-  .oradores .row {
-    flex-wrap: wrap; } }
+    min-height: 500px; } }
