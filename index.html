@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -40,7 +41,7 @@
                             <a class="nav-link" href="#">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link last-item" href="#">Comprar tickets</a>
+                            <a class="nav-link last-item" href="./index.html#tickets">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +61,7 @@
                             Voluptas vel quo aspernatur, obcaecati dignissimos mollitia a, magni amet placeat et ducimus
                             consequatur quibusdam voluptatibus quas earum doloremque laboriosam! Et, libero!</p>
                         <button type="button" class="btn btn-outline-light me-1">Quiero ser orador</button>
-                        <button type="button" class="btn btn-success">Comprar tickets</button>
+                        <a href="./index.html#tickets" type="button" class="btn btn-success">Comprar tickets</a>
                     </div>
                 </div>
             </div>
@@ -130,71 +131,161 @@
         </div>
         <!-- card horizontal -->
 
-        <!-- form -->
+        <!-- form  oradores-->
         <section>
             <p class="text-uppercase text-center mt-2">conviértete</p>
             <h2 class="text-uppercase text-center mt-2">en un orador</h2>
             <p class="text-center mt-2">Anotate como orador para dar una <abbr title="attribute">charla ignite</abbr>.
                 Cuentanos de que quieres hablar</p>
-            <form class="container mt-2">
-                <div class="row mb-4">
-                    <div class="col-5 m-0 p-0">
-                        <input type="text" placeholder="nombre" class="form-control m-0 p-0" />
+            <form action="mailto:lm30540@gmail.com" class="container mt-2">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <input class="form-control" type="text" id="name" name="name" placeholder="nombre" required>
                     </div>
-                    <div class="col-2 m-0 p-0"></div>
-                    <div class="col-5 m-0 p-0">
-                        <input type="text" placeholder="Apellido" class="form-control m-0 p-0" />
+                    <div class="col-12 col-md-6">
+                        <input class="form-control" type="text" id="lastname" name="lastname" placeholder="Apellido"
+                            required />
                     </div>
                 </div>
-                <div class="row">
-                    <textarea placeholder="¿Sobre qué quieres hablar?" class="form-control col-12 mb-4"
-                        id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <textarea class="form-control" placeholder="¿Sobre qué quieres hablar?" id="ora" name="ora"
+                            rows="4" cols="50"></textarea>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="form-text col-12">Recuerde incluir un título para tu
                         charla.
                     </div>
                 </div>
-                <div class="row">
-                    <button type="submit" class="col-12 btn btn-success my-3">Enviar</button>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mt-2 py-0">
+                            <button type="submit" class="btn btn-success w-100  py-0 my-0">Enviar</button>
+                        </div>
+                    </div>
+
                 </div>
             </form>
         </section>
-        <!-- form -->
+
+
+        <!-- Seccion tickets -->
+        <div class="container" id="tickets">
+            <div class="row">
+                <div class="col-12 col-md-4 border border-primary">
+                    <p class="text-center"><strong>Estudiante</strong></p>
+                    <p class="text-center">Tiene un descuento</p>
+                    <p class="text-center"><strong>80%</strong></p>
+                    <p class="text-center">*Presentar documentación</p>
+                </div>
+                <div class="col-12 col-md-4 border border-success">
+                    <p class="text-center"><strong>Trainee</strong></p>
+                    <p class="text-center">Tiene un descuento</p>
+                    <p class="text-center"><strong>50%</strong></p>
+                    <p class="text-center">*Presentar documentación</p>
+                </div>
+                <div class="col-12 col-md-4 border border-warning">
+                    <p class="text-center"><strong>Junior</strong></p>
+                    <p class="text-center">Tiene un descuento</p>
+                    <p class="text-center"><strong>15%</strong></p>
+                    <p class="text-center">*Presentar documentación</p>
+                </div>
+            </div>
+        </div>
+        <div class="my-3">
+            <p class="text-uppercase text-center">venta</p>
+            <p class="text-uppercase fs-2 text-center">valor de ticket $200</p>
+        </div>
+
+
+        <!-- form  tickets-->
+        <!-- cdo envio  el form se llama al onsubmit -->
+        <form class="container mt-2" id="compras" method="get"> 
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <input class="form-control" type="text" name="name" placeholder="nombre" required>
+                </div>
+                <div class="col-12 col-md-6">
+                    <input class="form-control" type="text" name="lastname" placeholder="Apellido"
+                        required />
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <input type="email" class="form-control" name="contact" placeholder="Correo" required>
+                </div>
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-12 col-md-6">
+                    <label class="form-label" for="cantidad">Cantidad</label>
+                    <input class="form-control" type="number" name="cantidad" required
+                        placeholder="cantidad">
+                </div>
+                <div class="col-12 col-md-6">
+                    <label for="categoria">Categoria</label>
+
+                    <select class="form-select" aria-label="Default select example sdkjhkjsdh" name="categoria"
+                        id="categoria">
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+                <div class="row mt-2">
+                    <!-- El total es contenido dinamico creado por JS -->
+                    <p id = "mostrarTotal" class="mostrandoTotal">Total a pagar</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <button id="btn-borrar" class="btn btn-success w-100">Borrar</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <button type="submit" class="btn btn-success w-100">Resumen</button>
+                    </div>
+                </div>
+        </form>
     </main>
 
 
     <!-- footer -->
     <footer>
-        <ul id="footer_navbar" class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Preguntas frecuentas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contáctanos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Prensa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Conferencias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Términos y condiciones</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Privacidad</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Estudiantes</a>
-          </li>
-        </ul>
-      </footer>
+        <div class="container">
+            <ul id="footer_navbar" class="nav d-flex flex-wrap flex-md-nowrap
+            justify-content-md-around">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Preguntas frecuentas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Términos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
     <!-- footer -->
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-    </script>
+        </script>
+
+    <script src="./js/cantidad.js" type="module"></script>
 </body>
 
 </html>
