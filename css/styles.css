@@ -40,9 +40,8 @@ footer {
   margin-top: 30px;
   padding: 10px;
   background-color: #315783; }
-
-#footer_navbar a {
-  color: #fff; }
+  footer #footer_navbar a {
+    color: #fff; }
 
 /* MQ MOBILE*/
 @media screen and (max-device-width: 640px) {
